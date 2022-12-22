@@ -81,7 +81,7 @@ img {
 }
 
 .encrypter__text::before {
-  background-image: url('./assets/images/exclamation.svg');
+  background-image: url('../assets/images/exclamation.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
