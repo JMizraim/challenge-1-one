@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="encrypter-container">
+        <div class="encrypter__input-container">
+          <textarea
+            id="encrypter-input"
+            class="encrypter__textarea"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <p class="encrypter__text">Solo letras mínusculas y sin acentos</p>
+          <div class="encrypter__btn-container">
+            <button id="btn-encrypt" class="encrypter__btn">Encriptar</button>
+            <button id="btn-decrypt" class="encrypter__btn encrypter__btn-d">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div
+          id="encrypter-output-container"
+          class="encrypter__output-container"
+        >
+          <article class="encrypter__no-text">
+            <img src="./assets/images/boy.svg" alt="boy" />
+            <h2>Ningún texto fue encontrado</h2>
+            <p>Ingrese el texto que desea encriptar o desencriptar</p>
+          </article>
+          <button
+            id="btn-copy"
+            class="encrypter__btn encrypter__btn--copy hidden"
+          >
+            Copiar
+          </button>
+        </div>
+      </div>
+      <div id="successMessage" class="hidden">Texto copiado</div>
+    </main>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
